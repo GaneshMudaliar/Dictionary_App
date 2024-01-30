@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  width: 100vw;
+}
+
+/* header */
+
+header {
+  background-color: #0d7171;
+  color: #fff;
+  padding: 10px;
+
+}
+header h1 {
+  font-size: 40px;
+}
+
+/* main */
+
+main {
+  min-height: 80vh;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+
+
+
+}
+
+main form {
+  display: flex;
+  justify-content: center;
+}
+
+form input , button {
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 40px;
+  margin-top: 15px;
+
+}
+
+form input {
+  flex-grow: 1 ;
+  background-color: #abe0e0;
+  padding-left: 15px;
+  outline: 0;
+  padding: 10px;
+
+}
+button {
+  background-color: #0d7171;
+  color: #fff;
+  margin-left: 15px;
+  cursor: pointer;
+  width: 150px;
+  padding: 10px;
+
+
+
+}
+
+
+.result {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgb(0,0,0,0.2);
+  position: relative;
+  height: 250px;
+}
+
+.result p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+ion-icon {
+  width: 26px;
+  height: 26px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 7px;
+  border-radius: 50% ;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.result a{
+  text-decoration: none;
+  margin: 10px ;
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d7171;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+/* footer */
+
+
+footer {
+  background-color: #0d7171;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+
+/* media query */
+
+@media screen and (max-width:400px) {
+  main form {
+    flex-direction: column;
+
+  }
+
+  button {
+    margin-left: 70px;
+    margin-top: 10px;
+
+  }
+
+  
+}
+
+@media screen  and (max-width :450px){
+.result {
+  height: 330px;
+}
+
+ion-icon {
+  width: 20px;
+  height: 20px;
+}
+  
+}
+
